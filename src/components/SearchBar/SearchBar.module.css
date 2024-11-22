@@ -1,0 +1,51 @@
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1.5rem 4rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+.icon {
+  position: absolute;
+  left: 1.5rem;
+  color: #888;
+}
+
+.clearButton {
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.clearButton:hover {
+  color: #333;
+}
+
+.large .searchInput {
+  height: 3.5rem;
+  font-size: 1.2rem;
+}
+
+.small .searchInput {
+  height: 2rem;
+  font-size: 0.9rem;
+}
