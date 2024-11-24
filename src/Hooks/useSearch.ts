@@ -30,7 +30,7 @@ export const useSearch = () => {
       } else if (data.length && error !== ErrorType.NO_ERROR) {
         setError(ErrorType.NO_ERROR);
       }
-    }, [search, error]);
+    }, [error, search, setError]);
 
   useEffect(() => {
     if (isLoading) {
