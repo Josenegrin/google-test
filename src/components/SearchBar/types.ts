@@ -1,3 +1,3 @@
 export interface SearchBarInterface {
-  isLarge?: false;
+  isLarge: boolean;
 }

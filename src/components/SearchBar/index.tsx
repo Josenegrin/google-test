@@ -13,7 +13,7 @@ export const SearchBar = ({ isLarge = false }: SearchBarInterface) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`${styles.container} ${isLarge ? styles.isLarge : styles.small}`}
+      className={`${styles.container} ${isLarge ? styles.large : styles.small}`}
       role="search"
       aria-label="Formulario de búsqueda"
     >
