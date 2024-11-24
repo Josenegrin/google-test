@@ -1,0 +1,28 @@
+.results_container {
+  min-height: 100vh;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 10fr;
+  margin: 1rem auto;
+}
+
+.results_container_list {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.results_container_details {
+  display: none;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+@media (min-width: 800px) {
+  .results_container {
+    grid-template-columns: 6fr 4fr;
+    margin: 4rem auto
+  }
+  .results_container_details {
+    display: grid;
+  }
+}
