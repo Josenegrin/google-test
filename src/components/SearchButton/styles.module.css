@@ -1,0 +1,13 @@
+.button {
+  background: var(--gray-secondary);
+  padding: 0.7rem 1rem;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
