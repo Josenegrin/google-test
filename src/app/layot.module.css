@@ -1,4 +1,9 @@
 .layout_container {
-  display: grid;
-  grid-template-rows: 65px 1fr 65px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+.layout_main_container {
+  flex: 1;
 }

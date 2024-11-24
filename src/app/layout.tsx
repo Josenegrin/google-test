@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/normalize.css";
 import "@/styles/globals.css";
-import { Footer } from "@/components/Footer/Footer";
-import { Header } from "@/components/Header/Header";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import styles from "./layot.module.css";
 
 const geistSans = localFont({
@@ -30,8 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${styles.layout_container}` }>
+        <div id="modal-root"></div>
         <Header />
+        <main className={styles.layout_main_container}>
           {children}
+        </main>
         <Footer />
       </body>
     </html>
